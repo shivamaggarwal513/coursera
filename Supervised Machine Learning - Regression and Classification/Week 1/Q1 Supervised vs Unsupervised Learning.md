@@ -1,6 +1,6 @@
 # Supervised vs Unsupervised Learning
 
-## Practice Quiz
+## Graded Quiz
 
 ### Question 1
 
