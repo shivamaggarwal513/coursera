@@ -1,6 +1,6 @@
 # Multiple Linear Regression
 
-## Practice Quiz
+## Graded Quiz
 
 ### Question 1
 
