@@ -11,3 +11,4 @@
 - **Quiz**: Regression *(Graded)*
 - **Lab**: Gradient Descent
 - **Quiz**: Gradient Descent *(Graded)*
+- **Slides**: Introduction to Machine Learning
