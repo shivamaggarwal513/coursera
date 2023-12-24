@@ -4,8 +4,8 @@
 
 ### Question 1
 
+$$\text{Gradient Descent for Logistic Regression}$$
 $$
-\text{Gradient Descent for Logistic Regression} \\
 \text{repeat until convergence: }
 \begin{cases}
     w_j = w_j - \alpha \left[\displaystyle\frac{1}{m} \displaystyle\sum_{i=1}^m \left(f_{\mathbf{w}, b}\left(\mathbf{x}^{(i)}\right) - y^{(i)}\right)x_j^{(i)}\right] \\
