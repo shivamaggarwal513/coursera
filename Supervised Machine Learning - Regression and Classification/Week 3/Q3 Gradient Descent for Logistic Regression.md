@@ -5,6 +5,7 @@
 ### Question 1
 
 $$\text{Gradient Descent for Logistic Regression}$$
+
 $$
 \text{repeat until convergence: }
 \begin{cases}
