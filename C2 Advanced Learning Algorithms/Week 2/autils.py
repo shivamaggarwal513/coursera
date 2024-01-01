@@ -163,7 +163,7 @@ def plt_model(X,y,yhat_pre, yhat_post):
     plt.show()
 
 def display_errors(model,X,y):
-    f = model.predict(X)
+    f = model.predict(X, verbose=0)
     yhat = np.argmax(f, axis=1)
     doo = yhat != y[:,0]
     idxs = np.where(yhat != y[:,0])[0]
@@ -183,7 +183,7 @@ def display_errors(model,X,y):
             ax[i].imshow(X_reshaped, cmap='gray')
 
             # Predict using the Neural Network
-            prediction = model.predict(X[j].reshape(1,400))
+            prediction = model.predict(X[j].reshape(1,400), verbose=0)
             prediction_p = tf.nn.softmax(prediction)
             yhat = np.argmax(prediction_p)
 
@@ -200,4 +200,15 @@ def display_digit(X):
     X_reshaped = X.reshape((20,20)).T
     # Display the image
     ax.imshow(X_reshaped, cmap='gray')
+    plt.show()
+
+def plot_loss_tf(history):
+    fig,ax = plt.subplots(1,1, figsize = (4,3))
+    widgvis(fig)
+    ax.plot(history.history['loss'], label='loss')
+    ax.set_ylim([0, 2])
+    ax.set_xlabel('Epoch')
+    ax.set_ylabel('loss (cost)')
+    ax.legend()
+    ax.grid(True)
     plt.show()
