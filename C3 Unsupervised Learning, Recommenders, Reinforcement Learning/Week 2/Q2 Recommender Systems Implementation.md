@@ -8,31 +8,31 @@ Lecture described using 'mean normalization' to do feature scaling of the rating
 
 -
 
-$
+$$
 \begin{aligned}
 y_{\text{norm}}(i, j) &= \frac{y(i,j)-\mu_i}{\sigma_i} \text{, where} \\
 \mu_i &= \frac{1}{\sum_j r(i,j)} \sum_{j:r(i,j)=1} y(i,j) \\
 \sigma_i^2 &= \frac{1}{\sum_j r(i,j)} \sum_{j:r(i,j)=1} (y(i,j)-\mu_j)^2 \\
 \end{aligned}
-$
+$$
 
 -
 
-$
+$$
 \begin{aligned}
 y_{\text{norm}}(i, j) &= y(i,j)-\mu_i \text{, where} \\
 \mu_i &= \frac{1}{\sum_j r(i,j)} \sum_{j:r(i,j)=1} y(i,j) \\
 \end{aligned}
-$
+$$
 
 -
 
-$
+$$
 \begin{aligned}
 y_{\text{norm}}(i, j) &= \frac{y(i,j)-\mu_i}{\max_i-\min_i} \text{, where} \\
 \mu_i &= \frac{1}{\sum_j r(i,j)} \sum_{j:r(i,j)=1} y(i,j) \\
 \end{aligned}
-$
+$$
 
 Answer: B
 
@@ -55,7 +55,7 @@ Once a model is trained, the 'distance' between features vectors gives an indica
 
 The squared distance between the two vectors $\mathbf{x}^{(k)}$ and $\mathbf{x}^{(i)}$ is:
 
-$\text{distance} = \left\Vert \mathbf{x}^{(k)} - \mathbf{x}^{(i)} \right\Vert^2 = \sum_{l=1}^n \left(x_l^{(k)} - x_l^{(i)}\right)^2$
+$\text{distance} = \left\Vert \mathbf{x}^{(k)} - \mathbf{x}^{(i)} \right\Vert^2 = \displaystyle\sum_{l=1}^{n} \left(x_l^{(k)} - x_l^{(i)}\right)^2$
 
 Using the table below, find the closest item to the movie "Pies, Pies, Pies".
 
