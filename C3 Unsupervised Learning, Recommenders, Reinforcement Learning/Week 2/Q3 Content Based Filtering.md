@@ -31,12 +31,19 @@ Explanation: Similar movies generate similar $v_m$'s.
 Which of the following neural network configurations are valid for a content based filtering application? Please note carefully the dimensions of the neural network indicated in the diagram. Check all the options that apply:
 
 - The user and item networks have 64 dimensional $v_u$ and $v_m$ vector respectively.
+
 ![NNArchA](./images/C3_W2_Q3_NNArchA.png)
+
 - The user and the item networks have different architectures.
+
 ![NNArchB](./images/C3_W2_Q3_NNArchB.png)
+
 - Both the user and the item networks have the same architecture.
+
 ![NNArchC](./images/C3_W2_Q3_NNArchC.png)
+
 - The user vector $v_u$ is 32 dimensional, and the item vector $v_m$ is 64 dimensional.
+
 ![NNArchD](./images/C3_W2_Q3_NNArchD.png)
 
 Answer: ABC
